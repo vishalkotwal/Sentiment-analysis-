@@ -18,7 +18,7 @@ st.subheader("Predict your sentiment :)")
 #local_css("style.css")
 #remote_css('https://fonts.googleapis.com/icon?family=Material+Icons')
 
-df = pd.read_csv("moviereviews.csv")
+df = pd.read_csv("moviereviews.xlsx")
 df['review'] = df['review'].fillna(' ')
 x = df.iloc[:,0].values
 df['binary'] = 1
