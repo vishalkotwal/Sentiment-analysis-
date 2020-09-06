@@ -8,7 +8,7 @@ import time
 from sklearn.metrics import precision_score
 st.title("Machine learning model")
 st.subheader("Predict your sentiment :)")
-df = pd.read_csv("moviereviews.csv")
+df = pd.read_excel("moviereviews.xlsx")
 df['review'] = df['review'].fillna(' ')
 x = df.iloc[:,0].values
 df['binary'] = 1
