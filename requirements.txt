@@ -5,3 +5,4 @@ sklearn
 wordcloud
 pillow
 matplotlib
+xlrd
