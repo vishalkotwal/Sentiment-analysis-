@@ -21,7 +21,7 @@ Multimodel = Pipeline([('tfidf',TfidfVectorizer(binary = True,max_df=0.611111111
 Multimodel.fit(x_train,y_train)
 counts = np.bincount(y_train)
 v = np.argmax(counts)
-st.subheader("Your Review :  ")
+st.subheader("Your MovieReview :  ")
 input = st.text_area("\n", "")
 print()
 predict_me = st.button("Predict_Me")
